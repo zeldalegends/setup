@@ -26,8 +26,8 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 # # sudo chmod g+rwx "$HOME/.docker" -R
 sudo groupadd docker
 sudo usermod -aG docker $USER
-# newgrp docker
-sudo service docker start
+newgrp docker
+# sudo service docker start
 
 # Install Node.js and Node-RED
 sudo apt install build-essential git curl
