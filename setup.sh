@@ -1,4 +1,4 @@
-#! \bin\bash
+#!/bin/bash
 
 # Setup Docker repository
 sudo apt-get update
