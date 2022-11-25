@@ -54,8 +54,3 @@ sudo systemctl enable nodered.service
 # Verify installations
 docker -version
 node -version
-
-# APPENDIX - Useful commands
-#
-# docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
-# top -u ubuntu
