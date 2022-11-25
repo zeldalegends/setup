@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Source: https://docs.docker.com/engine/install/ubuntu/#installation-methods
+
 # Setup Docker repository
 sudo apt-get update
 sudo apt-get install \
@@ -16,41 +18,44 @@ echo \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 # Install Docker Engine
-# sudo chmod a+r /etc/apt/keyrings/docker.gpg
 sudo apt-get update
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
-# # Create and add docker group
-# # sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
-# # sudo chmod g+rwx "$HOME/.docker" -R
+# Add Docker group
 sudo groupadd docker
 sudo usermod -aG docker $USER
-newgrp docker
-# sudo service docker start
+newgrp docker # sudo service docker start
 
 # Install Node.js and Node-RED
-sudo apt install build-essential git curl
+sudo apt install build-essential git # curl
 bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
+echo
+echo ---------------------------
+echo Node-RED available commands
+echo ---------------------------
+echo node-red-start
+echo node-red-stop
+echo node-red-restart
+echo node-red-log
+echo ---------------------------
+echo
 
 # Start on boot
 sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
 sudo systemctl enable nodered.service
 
-# Verify installations
-docker -version
-node -version
-
 # Disable start on boot
 # sudo systemctl disable docker.service
 # sudo systemctl disable containerd.service
 # sudo systemctl disable nodered.service
 
-# Available commands
-# docker compose logs -f
-# docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
-# node-red-start
-# node-red-stop
-# node-red-restart
-# node-red-log
+# Verify installations
+docker -version
+node -version
+
+# APPENDIX - Useful commands
+#
+# docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
+# top -u ubuntu
