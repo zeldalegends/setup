@@ -23,9 +23,9 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 # Add Docker group
-sudo groupadd docker
-sudo usermod -aG docker $USER
-newgrp docker # sudo service docker start
+# sudo groupadd docker
+# sudo usermod -aG docker $USER
+# newgrp docker # sudo service docker start
 
 # Install Node.js and Node-RED
 sudo apt install build-essential git # curl
@@ -52,5 +52,5 @@ sudo systemctl enable nodered.service
 # sudo systemctl disable nodered.service
 
 # Verify installations
-docker -version
-node -version
+docker -v
+node -v
