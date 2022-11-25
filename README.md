@@ -2,9 +2,9 @@
 
 Create an Ubuntu VM, e.g., on [FIWARE Lab](https://cloud.lab.fiware.org). 
 
-Clone this repo: ``git clone https://github.com/alinonet/fiware-lab``.
+Clone this repo: ``git clone https://github.com/<user>/<repo>``.
 
-Launch ``./setup.sh``.
+Change dir ``cd <repo>`` and launch ``./setup.sh``.
 
 Check Docker containers and running processes:
 
