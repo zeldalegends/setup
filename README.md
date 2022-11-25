@@ -28,4 +28,4 @@ Ubuntu 22.04
 
 ### License
 
-(C) Alerox, 2022
+Copyright (C) Alerox, 2022
