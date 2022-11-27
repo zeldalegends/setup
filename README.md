@@ -2,9 +2,9 @@
 
 Create an Ubuntu VM, e.g., on [FIWARE Lab](https://cloud.lab.fiware.org).
 
-Clone this repo: ``git clone https://github.com/alinonet/vm-init``.
+Clone this repo: ``git clone https://github.com/alinonet/setup-server``.
 
-Launch ``cd vm-init``; ``./setup.sh``.
+Launch ``cd setup-server``; ``./setup.sh``.
 
 ### Tested versions
 
