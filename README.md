@@ -8,7 +8,7 @@ Launch ``cd vm-init``; ``./setup.sh``.
 
 Check system info: ``./sysinfo.sh``.
 
-Check Docker: ``docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"`.
+Check Docker: ``docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"``.
 
 ### Tested versions
 
