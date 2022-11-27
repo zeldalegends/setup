@@ -6,10 +6,6 @@ Clone this repo: ``git clone https://github.com/alinonet/vm-init``.
 
 Launch ``cd vm-init``; ``./setup.sh``.
 
-Check system info: ``./sysinfo.sh``.
-
-Check Docker: ``docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"``.
-
 ### Tested versions
 
 Ubuntu 20.04
