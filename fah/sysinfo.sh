@@ -1,5 +1,5 @@
 #!/bin/bash
-#cat /etc/*release|grep DESCRIPTION
+
 uname -nrpv
 cat /proc/cpuinfo|grep name
 free -m
