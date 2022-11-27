@@ -2,17 +2,17 @@
 
 Create an Ubuntu VM, e.g., on [FIWARE Lab](https://cloud.lab.fiware.org). 
 
-Clone this repo: ``git clone https://github.com/alinonet/setup-ubuntu-vm``.
+Clone this repo: ``git clone https://github.com/alinonet/vm-init``.
 
-Launch ``cd setup-ubuntu-vm``; ``./setup.sh``.
+Launch ``cd vm-init``; ``./setup.sh``.
 
 ### Other commands
 
 Remove or rename the setup folder:
 
-- Rename: ``mv setup-ubuntu-vm <new_name>``
+- Rename: ``mv vm-init <new_name>``
 
-- Delete: ``rm -rf setup-ubuntu-vm``
+- Delete: ``rm -rf vm-init``
 
 Check Docker containers and running processes:
 
